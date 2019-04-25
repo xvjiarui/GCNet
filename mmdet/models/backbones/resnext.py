@@ -2,7 +2,7 @@ import math
 
 import torch.nn as nn
 
-from mmdet.ops import DeformConv, ModulatedDeformConv
+from mmdet.ops import DeformConv, ModulatedDeformConv, ContextBlock2d
 from .resnet import Bottleneck as _Bottleneck
 from .resnet import ResNet
 from ..registry import BACKBONES
@@ -95,7 +95,8 @@ def make_res_layer(block,
                    style='pytorch',
                    with_cp=False,
                    normalize=dict(type='BN'),
-                   dcn=None):
+                   dcn=None,
+                   ct=None):
     downsample = None
     if stride != 1 or inplanes != planes * block.expansion:
         downsample = nn.Sequential(
@@ -121,7 +122,8 @@ def make_res_layer(block,
             style=style,
             with_cp=with_cp,
             normalize=normalize,
-            dcn=dcn))
+            dcn=dcn,
+            ct=ct))
     inplanes = planes * block.expansion
     for i in range(1, blocks):
         layers.append(
@@ -135,7 +137,8 @@ def make_res_layer(block,
                 style=style,
                 with_cp=with_cp,
                 normalize=normalize,
-                dcn=dcn))
+                dcn=dcn,
+                ct=ct))
 
     return nn.Sequential(*layers)
 
@@ -184,6 +187,7 @@ class ResNeXt(ResNet):
             stride = self.strides[i]
             dilation = self.dilations[i]
             dcn = self.dcn if self.stage_with_dcn[i] else None
+            ct = self.ct if self.stage_with_ct[i] else None
             planes = 64 * 2**i
             res_layer = make_res_layer(
                 self.block,
@@ -197,7 +201,8 @@ class ResNeXt(ResNet):
                 style=self.style,
                 with_cp=self.with_cp,
                 normalize=self.normalize,
-                dcn=dcn)
+                dcn=dcn,
+                ct=ct)
             self.inplanes = planes * self.block.expansion
             layer_name = 'layer{}'.format(i + 1)
             self.add_module(layer_name, res_layer)

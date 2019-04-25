@@ -214,6 +214,29 @@ We released RPN, Faster R-CNN and Mask R-CNN models in the first version. More m
 - The memory is measured with `torch.cuda.max_memory_allocated()`. The batch size is 16 (2 images per GPU).
 - The dcn ops are modified from https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch, which should be more memory efficient and slightly faster.
 
+### GCNet
+
+| Backbone  | Model        | Style   | Context        | Lr schd |  box AP | mask AP |
+|:---------:|:----------------:|:-------:|:--------------:|:-------:|:------:|:-------:|
+| R-50-FPN  | Mask             | pytorch | -              | 1x      | 37.2   | 33.8    | 
+| R-50-FPN  | Mask             | pytorch | GC(c3-c5, r16) | 1x      | 39.4   | 35.7    |
+| R-50-FPN  | Mask             | pytorch | GC(c3-c5, r4)  | 1x      | 39.9   | 36.2    |
+| R-101-FPN | Mask             | pytorch | -              | 1x      | 39.8   | 36.0    |
+| R-101-FPN | Mask             | pytorch | GC(c3-c5, r16) | 1x      | 41.1   | 37.4    |
+| R-101-FPN | Mask             | pytorch | GC(c3-c5, r4)  | 1x      | 41.7   | 37.6    |
+| X-101-FPN | Mask             | pytorch | -              | 1x      | 41.2   | 37.3    |
+| X-101-FPN | Mask             | pytorch | GC(c3-c5, r16) | 1x      | 42.4   | 38.0    |
+| X-101-FPN | Mask             | pytorch | GC(c3-c5, r4)  | 1x      | 42.9   | 38.5    |
+| R-101-FPN | Cascade Mask     | pytorch | -              | 1x      | 44.7   | 38.3    |
+| R-101-FPN | Cascade Mask     | pytorch | GC(c3-c5, r16) | 1x      | 45.9   | 39.3    |
+| R-101-FPN | Cascade Mask     | pytorch | GC(c3-c5, r4)  | 1x      | 46.5   | 39.7    |
+| R-101-FPN | DCN Cascade Mask | pytorch | -              | 1x      | 47.1   | 40.4    |
+| R-101-FPN | DCN Cascade Mask | pytorch | GC(c3-c5, r16) | 1x      | 47.9   | 40.9    |
+| R-101-FPN | DCN Cascade Mask | pytorch | GC(c3-c5, r4)  | 1x      | 47.9   | 40.8    |
+
+**Notes:**
+- `r4` and `r16` denote ratio 4 and ratio 16 GC block respectively. 
+
 ## Comparison with Detectron
 
 We compare mmdetection with [Detectron](https://github.com/facebookresearch/Detectron)
