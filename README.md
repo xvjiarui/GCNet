@@ -42,9 +42,9 @@ Many thanks to mmdetection for their simple and clean framework.
 
 **Notes:**
 
-- `GC` denotes Global Context block is inserted after 1x1 conv of backbone. 
-- `DCN` denotes replace 3x3 conv in `c3-c5` stages of backbone.
-- `r4` and `r16` denote ratio 4 and ratio 16 GC block respectively. 
+- `GC` denotes Global Context (GC) block is inserted after 1x1 conv of backbone. 
+- `DCN` denotes replace 3x3 conv with 3x3 Deformable Convolution in `c3-c5` stages of backbone.
+- `r4` and `r16` denote ratio 4 and ratio 16 in GC block respectively. 
 
 ## Requirements
 
