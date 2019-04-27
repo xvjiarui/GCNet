@@ -7,14 +7,14 @@ Many thanks to mmdetection for their simple and clean framework.
 
 ## Introduction
 
-GCNet is initially described in [arxiv](https://arxiv.org/abs/1904.11492). Via absorbing advantages of Non-Local Networks (NLNet) and Squeeze-Excitation Networks (SENet),  GCNet provides a simple, fast and effective approach for global context modeling, which generally outperforms both NLNet and SENet on major benchmarks for various recognition tasks.
+**GCNet** is initially described in [arxiv](https://arxiv.org/abs/1904.11492). Via absorbing advantages of Non-Local Networks (NLNet) and Squeeze-Excitation Networks (SENet),  GCNet provides a simple, fast and effective approach for global context modeling, which generally outperforms both NLNet and SENet on major benchmarks for various recognition tasks.
 
 ## Citing GCNet
 
 ```
 @article{cao2019GCNet,
   title={GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond},
-  author={Cao, Yue and Xu, Jiarui and Stephen, Lin and Fangyun, Wei and Hu, Han},
+  author={Cao, Yue and Xu, Jiarui and Lin, Stephen and Wei, Fangyun and Hu, Han},
   journal={arXiv preprint arXiv:1904.11492},
   year={2019}
 }
