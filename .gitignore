@@ -109,4 +109,13 @@ mmdet/version.py
 data
 .vscode
 .idea
+<<<<<<< HEAD
 work_dirs
+=======
+
+# custom
+*.pkl
+*.pkl.json
+*.log.json
+work_dirs/
+>>>>>>> upstream/master
