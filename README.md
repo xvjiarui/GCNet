@@ -37,36 +37,36 @@ Thanks again for open-mmlab's work on open source projects.
 
 |  Backbone |       Model      | Backbone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
 |:---------:|:----------------:|:-------------:|:----------------:|:--------------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:-------:|:--------:|
-|  R-50-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   |        -       |    1x   |    3.9   |        0.453        |      10.6      |  37.3  |   34.2  | [model]()|
-|  R-50-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   | GC(c3-c5, r16) |    1x   |    4.5   |        0.533        |      10.1      |  38.5  |   35.1  | [model]()|
-|  R-50-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   |  GC(c3-c5, r4) |    1x   |    4.6   |        0.533        |       9.9      |  38.9  |   35.5  | [model]()|
-|  R-50-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   |        -       |    2x   |     -    |          -          |        -       |  38.2  |   34.9  | [model]()|
-|  R-50-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   | GC(c3-c5, r16) |    2x   |     -    |          -          |        -       |  39.7  |   36.1  | [model]()|
-|  R-50-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   |  GC(c3-c5, r4) |    2x   |     -    |          -          |        -       |  40.0  |   36.2  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |        -       |    1x   |    3.9   |        0.543        |      10.2      |  37.2  |   33.8  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   | GC(c3-c5, r16) |    1x   |    4.5   |        0.547        |       9.9      |  39.4  |   35.7  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |  GC(c3-c5, r4) |    1x   |    4.6   |        0.603        |       9.4      |  39.9  |   36.2  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |        -       |    2x   |    3.9   |        0.543        |      10.2      |  37.7  |   34.3  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   | GC(c3-c5, r16) |    2x   |    4.5   |        0.547        |       9.9      |  39.7  |   36.0  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |  GC(c3-c5, r4) |    2x   |    4.6   |        0.603        |       9.4      |  40.2  |   36.3  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc(SyncBN) |        -       |    1x   |     -    |          -          |        -       |  38.8  |   34.6  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc(SyncBN) | GC(c3-c5, r16) |    1x   |     -    |          -          |        -       |  41.0  |   36.5  | [model]()|
-|  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc(SyncBN) |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  41.4  |   37.0  | [model]()|
-| R-101-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   |        -       |    1x   |    5.8   |        0.571        |       9.5      |  39.4  |   35.9  | [model]()|
-| R-101-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   | GC(c3-c5, r16) |    1x   |    7.0   |        0.731        |       8.6      |  40.8  |   37.0  | [model]()|
-| R-101-FPN |       Mask       |     fixBN     |    2fc(w/o BN)   |  GC(c3-c5, r4) |    1x   |    7.1   |        0.747        |       8.6      |  40.8  |   36.9  | [model]()|
-| R-101-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |        -       |    1x   |    5.8   |        0.665        |       9.2      |  39.8  |   36.0  | [model]()|
-| R-101-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   | GC(c3-c5, r16) |    1x   |    7.0   |        0.778        |       9.0      |  41.1  |   37.4  | [model]()|
-| R-101-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |  GC(c3-c5, r4) |    1x   |    7.1   |        0.786        |       8.9      |  41.7  |   37.6  | [model]()|
-| X-101-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |        -       |    1x   |    7.1   |        0.912        |       8.5      |  41.2  |   37.3  | [model]()|
-| X-101-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   | GC(c3-c5, r16) |    1x   |    8.2   |        1.055        |       7.7      |  42.4  |   38.0  | [model]()|
-| X-101-FPN |       Mask       |     SyncBN    |    2fc(w/o BN)   |  GC(c3-c5, r4) |    1x   |    8.3   |        1.037        |       7.6      |  42.9  |   38.5  | [model]()|
-| X-101-FPN |   Cascade Mask   |     SyncBN    |    2fc(w/o BN)   |        -       |    1x   |     -    |          -          |        -       |  44.7  |   38.3  | [model]()|
-| X-101-FPN |   Cascade Mask   |     SyncBN    |    2fc(w/o BN)   | GC(c3-c5, r16) |    1x   |     -    |          -          |        -       |  45.9  |   39.3  | [model]()|
-| X-101-FPN |   Cascade Mask   |     SyncBN    |    2fc(w/o BN)   |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  46.5  |   39.7  | [model]()|
-| X-101-FPN | DCN Cascade Mask |     SyncBN    |    2fc(w/o BN)   |        -       |    1x   |     -    |          -          |        -       |  47.1  |   40.4  | [model]()|
-| X-101-FPN | DCN Cascade Mask |     SyncBN    |    2fc(w/o BN)   | GC(c3-c5, r16) |    1x   |     -    |          -          |        -       |  47.9  |   40.9  | [model]()|
-| X-101-FPN | DCN Cascade Mask |     SyncBN    |    2fc(w/o BN)   |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  47.9  |   40.8  | [model]()|
+|  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |        -       |    1x   |    3.9   |        0.453        |      10.6      |  37.3  |   34.2  | [model]()|
+|  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    4.5   |        0.533        |      10.1      |  38.5  |   35.1  | [model]()|
+|  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |  GC(c3-c5, r4) |    1x   |    4.6   |        0.533        |       9.9      |  38.9  |   35.5  | [model]()|
+|  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |        -       |    2x   |     -    |          -          |        -       |  38.2  |   34.9  | [model]()|
+|  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   | GC(c3-c5, r16) |    2x   |     -    |          -          |        -       |  39.7  |   36.1  | [model]()|
+|  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |  GC(c3-c5, r4) |    2x   |     -    |          -          |        -       |  40.0  |   36.2  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |        -       |    1x   |    3.9   |        0.543        |      10.2      |  37.2  |   33.8  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    4.5   |        0.547        |       9.9      |  39.4  |   35.7  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |  GC(c3-c5, r4) |    1x   |    4.6   |        0.603        |       9.4      |  39.9  |   36.2  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |        -       |    2x   |    3.9   |        0.543        |      10.2      |  37.7  |   34.3  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   | GC(c3-c5, r16) |    2x   |    4.5   |        0.547        |       9.9      |  39.7  |   36.0  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |  GC(c3-c5, r4) |    2x   |    4.6   |        0.603        |       9.4      |  40.2  |   36.3  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc (SyncBN) |        -       |    1x   |     -    |          -          |        -       |  38.8  |   34.6  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc (SyncBN) | GC(c3-c5, r16) |    1x   |     -    |          -          |        -       |  41.0  |   36.5  | [model]()|
+|  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc (SyncBN) |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  41.4  |   37.0  | [model]()|
+| R-101-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |        -       |    1x   |    5.8   |        0.571        |       9.5      |  39.4  |   35.9  | [model]()|
+| R-101-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    7.0   |        0.731        |       8.6      |  40.8  |   37.0  | [model]()|
+| R-101-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |  GC(c3-c5, r4) |    1x   |    7.1   |        0.747        |       8.6      |  40.8  |   36.9  | [model]()|
+| R-101-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |        -       |    1x   |    5.8   |        0.665        |       9.2      |  39.8  |   36.0  | [model]()|
+| R-101-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    7.0   |        0.778        |       9.0      |  41.1  |   37.4  | [model]()|
+| R-101-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |  GC(c3-c5, r4) |    1x   |    7.1   |        0.786        |       8.9      |  41.7  |   37.6  | [model]()|
+| X-101-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |        -       |    1x   |    7.1   |        0.912        |       8.5      |  41.2  |   37.3  | [model]()|
+| X-101-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    8.2   |        1.055        |       7.7      |  42.4  |   38.0  | [model]()|
+| X-101-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |  GC(c3-c5, r4) |    1x   |    8.3   |        1.037        |       7.6      |  42.9  |   38.5  | [model]()|
+| X-101-FPN |   Cascade Mask   |     SyncBN    |    2fc (w/o BN)   |        -       |    1x   |     -    |          -          |        -       |  44.7  |   38.3  | [model]()|
+| X-101-FPN |   Cascade Mask   |     SyncBN    |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |     -    |          -          |        -       |  45.9  |   39.3  | [model]()|
+| X-101-FPN |   Cascade Mask   |     SyncBN    |    2fc (w/o BN)   |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  46.5  |   39.7  | [model]()|
+| X-101-FPN | DCN Cascade Mask |     SyncBN    |    2fc (w/o BN)   |        -       |    1x   |     -    |          -          |        -       |  47.1  |   40.4  | [model]()|
+| X-101-FPN | DCN Cascade Mask |     SyncBN    |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |     -    |          -          |        -       |  47.9  |   40.9  | [model]()|
+| X-101-FPN | DCN Cascade Mask |     SyncBN    |    2fc (w/o BN)   |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  47.9  |   40.8  | [model]()|
 **Notes:**
 
 - `GC` denotes Global Context (GC) block is inserted after 1x1 conv of backbone. 
