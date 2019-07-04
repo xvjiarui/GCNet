@@ -36,6 +36,7 @@ Thanks again for open-mmlab's work on open source projects.
 ## Main Results
 
 **Results on R-50-FPN with backbone (fixBN)**
+
 |  Backbone |       Model      | Backbone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
 |:---------:|:----------------:|:-------------:|:----------------:|:--------------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:-------:|:--------:|
 |  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |        -       |    1x   |    3.9   |        0.453        |      10.6      |  37.3  |   34.2  | [model]()|
@@ -46,6 +47,7 @@ Thanks again for open-mmlab's work on open source projects.
 |  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |  GC(c3-c5, r4) |    2x   |     -    |          -          |        -       |  40.0  |   36.2  | [model]()|
 
 **Results on R-50-FPN with backbone (syncBN)**
+
 |  Backbone |       Model      | Backbone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
 |:---------:|:----------------:|:-------------:|:----------------:|:--------------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:-------:|:--------:|
 |  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |        -       |    1x   |    3.9   |        0.543        |      10.2      |  37.2  |   33.8  | [model]()|
@@ -59,6 +61,7 @@ Thanks again for open-mmlab's work on open source projects.
 |  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc (SyncBN) |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  41.4  |   37.0  | [model]()|
 
 **Results on stronger backbones**
+
 |  Backbone |       Model      | Backbone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
 |:---------:|:----------------:|:-------------:|:----------------:|:--------------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:-------:|:--------:|
 | R-101-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |        -       |    1x   |    5.8   |        0.571        |       9.5      |  39.4  |   35.9  | [model]()|
