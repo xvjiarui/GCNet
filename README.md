@@ -35,9 +35,9 @@ Thanks again for open-mmlab's work on open source projects.
 
 ## Main Results
 
-**Results on R-50-FPN with backbone (fixBN)**
+### Results on R-50-FPN with backbone (fixBN)
 
-|  Backbone |       Model      | Backbone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
+|  Back-bone |       Model      | Back-bone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
 |:---------:|:----------------:|:-------------:|:----------------:|:--------------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:-------:|:--------:|
 |  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |        -       |    1x   |    3.9   |        0.453        |      10.6      |  37.3  |   34.2  | [model]()|
 |  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    4.5   |        0.533        |      10.1      |  38.5  |   35.1  | [model]()|
@@ -46,9 +46,9 @@ Thanks again for open-mmlab's work on open source projects.
 |  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   | GC(c3-c5, r16) |    2x   |     -    |          -          |        -       |  39.7  |   36.1  | [model]()|
 |  R-50-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |  GC(c3-c5, r4) |    2x   |     -    |          -          |        -       |  40.0  |   36.2  | [model]()|
 
-**Results on R-50-FPN with backbone (syncBN)**
+### Results on R-50-FPN with backbone (syncBN)
 
-|  Backbone |       Model      | Backbone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
+|  Back-bone |       Model      | Back-bone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
 |:---------:|:----------------:|:-------------:|:----------------:|:--------------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:-------:|:--------:|
 |  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   |        -       |    1x   |    3.9   |        0.543        |      10.2      |  37.2  |   33.8  | [model]()|
 |  R-50-FPN |       Mask       |     SyncBN    |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    4.5   |        0.547        |       9.9      |  39.4  |   35.7  | [model]()|
@@ -60,9 +60,9 @@ Thanks again for open-mmlab's work on open source projects.
 |  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc (SyncBN) | GC(c3-c5, r16) |    1x   |     -    |          -          |        -       |  41.0  |   36.5  | [model]()|
 |  R-50-FPN |       Mask       |     SyncBN    | 4conv1fc (SyncBN) |  GC(c3-c5, r4) |    1x   |     -    |          -          |        -       |  41.4  |   37.0  | [model]()|
 
-**Results on stronger backbones**
+### Results on stronger backbones
 
-|  Backbone |       Model      | Backbone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
+|  Back-bone |       Model      | Back-bone Norm |       Heads      |     Context    | Lr schd | Mem (GB) | Train time (s/iter) | Inf time (fps) | box AP | mask AP | Download |
 |:---------:|:----------------:|:-------------:|:----------------:|:--------------:|:-------:|:--------:|:-------------------:|:--------------:|:------:|:-------:|:--------:|
 | R-101-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   |        -       |    1x   |    5.8   |        0.571        |       9.5      |  39.4  |   35.9  | [model]()|
 | R-101-FPN |       Mask       |     fixBN     |    2fc (w/o BN)   | GC(c3-c5, r16) |    1x   |    7.0   |        0.731        |       8.6      |  40.8  |   37.0  | [model]()|
