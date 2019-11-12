@@ -2,8 +2,12 @@
 
 By [Yue Cao](http://yue-cao.me), [Jiarui Xu](http://jerryxu.net), [Stephen Lin](https://scholar.google.com/citations?user=c3PYmxUAAAAJ&hl=en), Fangyun Wei, [Han Hu](https://sites.google.com/site/hanhushomepage/).
 
-This repo is a official implementation of ["GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond"](https://arxiv.org/abs/1904.11492) on COCO object detection based on open-mmlab's [mmdetection](https://github.com/open-mmlab/mmdetection).
+This repo is a official implementation of ["GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond"](https://arxiv.org/abs/1904.11492) on COCO object detection based on open-mmlab's [mmdetection](https://github.com/open-mmlab/mmdetection). The core operator GC block could be find [here](https://github.com/xvjiarui/GCNet/blob/master/mmdet/ops/gcb/context_block.py). 
 Many thanks to mmdetection for their simple and clean framework. 
+
+*Update on 2019/10/28*
+
+GCNet won the **Best Paper Award** at ICCV 2019 Neural Architects Workshop!
 
 *Update on 2019/07/01*
 
