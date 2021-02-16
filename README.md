@@ -1,9 +1,19 @@
 # GCNet for Object Detection
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/global-context-networks/object-detection-on-coco-minival)](https://paperswithcode.com/sota/object-detection-on-coco-minival?p=global-context-networks)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/global-context-networks/instance-segmentation-on-coco-minival)](https://paperswithcode.com/sota/instance-segmentation-on-coco-minival?p=global-context-networks)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/global-context-networks/object-detection-on-coco)](https://paperswithcode.com/sota/object-detection-on-coco?p=global-context-networks)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/global-context-networks/instance-segmentation-on-coco)](https://paperswithcode.com/sota/instance-segmentation-on-coco?p=global-context-networks)
+
+
 By [Yue Cao](http://yue-cao.me), [Jiarui Xu](http://jerryxu.net), [Stephen Lin](https://scholar.google.com/citations?user=c3PYmxUAAAAJ&hl=en), Fangyun Wei, [Han Hu](https://sites.google.com/site/hanhushomepage/).
 
 This repo is a official implementation of ["GCNet: Non-local Networks Meet Squeeze-Excitation Networks and Beyond"](https://arxiv.org/abs/1904.11492) on COCO object detection based on open-mmlab's [mmdetection](https://github.com/open-mmlab/mmdetection). The core operator GC block could be find [here](https://github.com/xvjiarui/GCNet/blob/master/mmdet/ops/gcb/context_block.py). 
 Many thanks to mmdetection for their simple and clean framework. 
+
+*Update on 2020/12/07*
+
+The extension of GCNet got accepted by TPAMI ([PDF](https://arxiv.org/pdf/2012.13375.pdf)).
 
 *Update on 2019/10/28*
 
